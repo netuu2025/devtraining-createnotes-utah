@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sp_widget">
+    <sp_widget action="DELETE">
+        <category>custom</category>
+        <client_script><![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+	var property
+	for(property in c.data){
+    console.log('c.data.' + property + ": " + c.data[property]);
+};]]></client_script>
+        <controller_as>c</controller_as>
+        <css/>
+        <data_table>sp_instance</data_table>
+        <demo_data/>
+        <description/>
+        <docs/>
+        <field_list/>
+        <has_preview>false</has_preview>
+        <id>notes_listnotes_list</id>
+        <internal>false</internal>
+        <link><![CDATA[function link(scope, element, attrs, controller) {  }]]></link>
+        <name>Notes List</name>
+        <option_schema/>
+        <public>false</public>
+        <roles/>
+        <script><![CDATA[(function() {  /* populate the 'data' object */  /* e.g., data.table = $sp.getValue('table'); */})();]]></script>
+        <servicenow>false</servicenow>
+        <sys_class_name>sp_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-10 13:35:51</sys_created_on>
+        <sys_id>a89bc7adc30eaa10b0947405e4013161</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name>Notes List</sys_name>
+        <sys_package display_value="CreateNotes" source="x_snc_createnotes">df5fd9a5090232007f44e1046c8ff69f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="CreateNotes">df5fd9a5090232007f44e1046c8ff69f</sys_scope>
+        <sys_update_name>sp_widget_a89bc7adc30eaa10b0947405e4013161</sys_update_name>
+        <sys_updated_by>Admin</sys_updated_by>
+        <sys_updated_on>2025-06-11 07:04:06</sys_updated_on>
+        <template><![CDATA[<div>
+<!-- your widget template -->
+</div>
+<div class="panel panel-default">
+  <div class="panel-heading clearfix">
+    <h3 class="panel-title pull-left">
+      ${Notes}
+    </h3>
+  </div>
+  <div class="panel-body">
+    <p>
+      Notes list widget
+    </p>
+  </div>
+</div>
+<pre>{{data|jason}}</pre>]]></template>
+    </sp_widget>
+    <sys_es_latest_script action="DELETE">
+        <id>a89bc7adc30eaa10b0947405e4013161</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-10 13:35:52</sys_created_on>
+        <sys_id>689bc7adc30eaa10b0947405e4013164</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-10 13:35:52</sys_updated_on>
+        <table>sp_widget</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="CreateNotes">df5fd9a5090232007f44e1046c8ff69f</application>
+        <file_path/>
+        <instance_id>75cf4b72eb9dee50cbdefceacad0cdb7</instance_id>
+        <instance_name>dev348234</instance_name>
+        <name>sp_widget_a89bc7adc30eaa10b0947405e4013161</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sp_widget"&gt;&lt;sp_widget action="INSERT_OR_UPDATE"&gt;&lt;category&gt;custom&lt;/category&gt;&lt;client_script&gt;&lt;![CDATA[api.controller=function() {
+  /* widget controller */
+  var c = this;
+	var property
+	for(property in c.data){
+    console.log('c.data.' + property + ": " + c.data[property]);
+};]]&gt;&lt;/client_script&gt;&lt;controller_as&gt;c&lt;/controller_as&gt;&lt;css/&gt;&lt;data_table&gt;sp_instance&lt;/data_table&gt;&lt;demo_data/&gt;&lt;description/&gt;&lt;docs/&gt;&lt;field_list/&gt;&lt;has_preview&gt;false&lt;/has_preview&gt;&lt;id&gt;notes_listnotes_list&lt;/id&gt;&lt;internal&gt;false&lt;/internal&gt;&lt;link&gt;&lt;![CDATA[function link(scope, element, attrs, controller) {  }]]&gt;&lt;/link&gt;&lt;name&gt;Notes List&lt;/name&gt;&lt;option_schema/&gt;&lt;public&gt;false&lt;/public&gt;&lt;roles/&gt;&lt;script&gt;&lt;![CDATA[(function() {  /* populate the 'data' object */  /* e.g., data.table = $sp.getValue('table'); */})();]]&gt;&lt;/script&gt;&lt;servicenow&gt;false&lt;/servicenow&gt;&lt;sys_class_name&gt;sp_widget&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-06-10 13:35:51&lt;/sys_created_on&gt;&lt;sys_id&gt;a89bc7adc30eaa10b0947405e4013161&lt;/sys_id&gt;&lt;sys_mod_count&gt;5&lt;/sys_mod_count&gt;&lt;sys_name&gt;Notes List&lt;/sys_name&gt;&lt;sys_package display_value="CreateNotes" source="x_snc_createnotes"&gt;df5fd9a5090232007f44e1046c8ff69f&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="CreateNotes"&gt;df5fd9a5090232007f44e1046c8ff69f&lt;/sys_scope&gt;&lt;sys_update_name&gt;sp_widget_a89bc7adc30eaa10b0947405e4013161&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;Admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-06-11 07:04:06&lt;/sys_updated_on&gt;&lt;template&gt;&lt;![CDATA[&lt;div&gt;
+&lt;!-- your widget template --&gt;
+&lt;/div&gt;
+&lt;div class="panel panel-default"&gt;
+  &lt;div class="panel-heading clearfix"&gt;
+    &lt;h3 class="panel-title pull-left"&gt;
+      ${Notes}
+    &lt;/h3&gt;
+  &lt;/div&gt;
+  &lt;div class="panel-body"&gt;
+    &lt;p&gt;
+      Notes list widget
+    &lt;/p&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;pre&gt;{{data|jason}}&lt;/pre&gt;]]&gt;&lt;/template&gt;&lt;/sp_widget&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;a89bc7adc30eaa10b0947405e4013161&lt;/id&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-06-10 13:35:52&lt;/sys_created_on&gt;&lt;sys_id&gt;689bc7adc30eaa10b0947405e4013164&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-06-10 13:35:52&lt;/sys_updated_on&gt;&lt;table&gt;sp_widget&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>139064355</payload_hash>
+        <record_name>Notes List</record_name>
+        <reverted_from/>
+        <source>923003a9c3caaa10b0947405e401310c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>Admin</sys_created_by>
+        <sys_created_on>2025-06-11 07:04:06</sys_created_on>
+        <sys_id>237b36b9c3022e10b0947405e4013106</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1975dcd9ef80000001</sys_recorded_at>
+        <sys_updated_by>Admin</sys_updated_by>
+        <sys_updated_on>2025-06-11 07:04:06</sys_updated_on>
+        <type>Widget</type>
+        <update_guid>a77b36b997022e10981422787e335705</update_guid>
+        <update_guid_history>a77b36b997022e10981422787e335705:139064355,6d7bf6b987022e100244ac03093090fc:730579623,5c6bf2f534022e10e76a9c6284ac3498:1130420255,1e5bf63963022e109d0ec7541ea053a8:873672238,53eb47edd90eaa102b01afd28d34c5f0:1130420255,e49bc7ad740eaa1089b848974a705263:1926994397</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Notes List">383cf2f9c3022e10b0947405e401319d</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>Admin</sys_created_by>
+        <sys_created_on>2025-06-11 07:07:11</sys_created_on>
+        <sys_db_object display_value="" name="sp_widget">sp_widget</sys_db_object>
+        <sys_id>5a9d28459c02435aa2fd638f14a65804</sys_id>
+        <sys_metadata>a89bc7adc30eaa10b0947405e4013161</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Notes List</sys_name>
+        <sys_package display_value="CreateNotes" source="x_snc_createnotes">df5fd9a5090232007f44e1046c8ff69f</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="CreateNotes">df5fd9a5090232007f44e1046c8ff69f</sys_scope>
+        <sys_scope_delete display_value="">64daa03572704d49a928bf08a985d6f9</sys_scope_delete>
+        <sys_update_name>sp_widget_a89bc7adc30eaa10b0947405e4013161</sys_update_name>
+        <sys_update_version display_value="sp_widget_a89bc7adc30eaa10b0947405e4013161">237b36b9c3022e10b0947405e4013106</sys_update_version>
+        <sys_updated_by>Admin</sys_updated_by>
+        <sys_updated_on>2025-06-11 07:07:11</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
